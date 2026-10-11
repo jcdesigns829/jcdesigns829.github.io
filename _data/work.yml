@@ -1,0 +1,26 @@
+# Each piece shown on the Artwork page. Add new work here — order is display order.
+# image: file in images/  category: shown as the label and used by the filter
+- title: Open Road
+  category: Digital Painting
+  image: color-digitpaint.jpg
+  alt: Painted road running between golden canyon walls under a blue sky with white clouds.
+
+- title: Supes
+  category: Graphic Design
+  image: supes.jpg
+  alt: Magazine cover titled SUPES showing a masked superhero in a blue and yellow suit in front of snowy mountains.
+
+- title: Living Room
+  category: Painting
+  image: house-painting.png
+  alt: Loose painting of a blue couch beneath a window framed by red curtains.
+
+- title: Spring Bunny
+  category: Digital Illustration
+  image: licensing.png
+  alt: Illustrated bunny in blue overalls standing in a grassy field with an egg basket, flowers and a tree.
+
+- title: Character Rotation
+  category: Animation
+  image: character-rotation.gif
+  alt: Animated line drawing of a simple cartoon character turning in place.

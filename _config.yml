@@ -1,0 +1,26 @@
+title: JCDesigns
+tagline: Graphic design, illustration & painting by Jack Carlin
+description: Portfolio of Jack Carlin — graphic design, digital painting, illustration and animation.
+author: Jack Carlin
+email: myjackcarlin@gmail.com
+url: "https://jcdesigns829.github.io"
+baseurl: ""
+lang: en
+
+social:
+  linkedin: https://www.linkedin.com/in/jack-carlin-65181b230
+  instagram: https://www.instagram.com/jackgotgame829
+
+
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

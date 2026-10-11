@@ -1,0 +1,16 @@
+---
+layout: default
+title: Artwork
+---
+<header class="page-head">
+  <h1>Artwork</h1>
+  {% assign categories = site.data.work | map: "category" | uniq %}
+  <div class="filters" role="group" aria-label="Filter by category">
+    <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
+    {% for c in categories %}
+    <button type="button" class="filter" data-filter="{{ c | slugify }}" aria-pressed="false">{{ c }}</button>
+    {% endfor %}
+  </div>
+</header>
+
+{% include gallery.html %}
