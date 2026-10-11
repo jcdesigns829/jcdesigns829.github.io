@@ -1,0 +1,7 @@
+body{margin:0;font-family:Arial;background:linear-gradient(to bottom right,#0BBAB4,#90D5FF);color:white}
+header{display:flex;justify-content:space-between;padding:20px;background:rgba(0,0,0,0.2)}
+nav a{color:white;margin:10px;text-decoration:none}
+.box{background:rgba(255,255,255,0.15);padding:20px;border-radius:12px;margin:20px}
+.hero{text-align:center;padding:100px}
+.drop-zone{border:2px dashed white;padding:20px;margin:10px}
+footer{text-align:center;padding:20px;background:rgba(0,0,0,0.2)}
