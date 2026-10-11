@@ -1,13 +1,14 @@
 {% assign pieces = site.data.work %}
-{% if include.category %}{% assign pieces = pieces | where: "category", include.category %}{% endif %}
-{% if include.limit %}{% assign pieces = pieces | slice: 0, include.limit %}{% endif %}
+{% if include.section %}{% assign pieces = pieces | where: "section", include.section %}{% endif %}
+{% if include.featured %}{% assign pieces = pieces | where: "featured", true %}{% endif %}
 <ul class="gallery">
   {% for piece in pieces %}
-  <li class="piece" data-category="{{ piece.category | slugify }}">
-    <a href="{{ '/images/' | append: piece.image | relative_url }}" class="piece-link" data-title="{{ piece.title }}" data-category="{{ piece.category }}">
-      <img src="{{ '/images/' | append: piece.image | relative_url }}" alt="{{ piece.alt }}" loading="lazy">
+  {% assign src = '/images/work/' | append: piece.image | relative_url %}
+  <li class="piece">
+    <a href="{{ src }}" class="piece-link" data-title="{{ piece.title }}" data-category="{{ piece.section }}">
+      <img src="{{ src }}" alt="{{ piece.alt }}" loading="lazy">
     </a>
-    <p class="piece-meta"><span class="piece-title">{{ piece.title }}</span> <span class="piece-cat">{{ piece.category }}</span></p>
+    <p class="piece-meta"><span class="piece-title">{{ piece.title }}</span> <span class="piece-cat">{{ piece.section }}</span></p>
   </li>
   {% endfor %}
 </ul>

@@ -199,3 +199,17 @@ main {
 }
 
 .eyebrow { margin: 0 0 20px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+
+/* Artwork sections */
+.sections {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: clamp(24px, 3vw, 40px);
+}
+.section-card { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; text-decoration: none; }
+.section-cover { grid-column: 1 / -1; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--tile); margin-bottom: 10px; }
+.section-cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
+.section-card:hover .section-cover img { transform: scale(1.03); }
+.section-name { font-family: var(--display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.02em; }
+.section-count { color: var(--muted); font-size: 0.9rem; align-self: center; }
+.section-card:hover .section-name { color: var(--accent); }

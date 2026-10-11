@@ -9,19 +9,7 @@ if (toggle && nav) {
   });
 }
 
-// Category filter (Work page)
-const filters = document.querySelectorAll(".filter");
-filters.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const value = btn.dataset.filter;
-    filters.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
-    document.querySelectorAll(".piece").forEach((piece) => {
-      piece.hidden = value !== "all" && piece.dataset.category !== value;
-    });
-  });
-});
-
-// Lightbox (Work page). Without JS or <dialog> support, links just open the image.
+// Lightbox (gallery pages). Without JS or <dialog> support, links just open the image.
 const box = document.querySelector(".lightbox");
 if (box && typeof box.showModal === "function") {
   const img = box.querySelector("img");
