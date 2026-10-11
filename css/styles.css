@@ -8,7 +8,7 @@
   --line: #e2e0d9;
   --accent: #067570;           /* teal (#0BBAB4, darkened for contrast) */
   --tile: #ecebe5;
-  --serif: "Instrument Serif", Georgia, serif;
+  --display: "Inter Tight", "Inter", system-ui, sans-serif;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --gutter: clamp(16px, 4vw, 48px);
   --max: 1280px;
@@ -49,9 +49,9 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; 
 a:hover { color: var(--accent); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-h1, h2 { font-family: var(--serif); font-weight: 400; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 0.5em; }
-h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
-h1 em { font-style: italic; color: var(--muted); }
+h1, h2 { font-family: var(--display); font-weight: 800; line-height: 0.98; letter-spacing: -0.035em; margin: 0 0 0.5em; }
+h1 { font-size: clamp(2.25rem, 5.5vw, 4.25rem); }
+h1 em { font-style: normal; color: var(--muted); }
 
 .sr-only, .skip {
   position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
@@ -92,7 +92,7 @@ h1 em { font-style: italic; color: var(--muted); }
   .site-header { flex-wrap: wrap; }
   .site-nav { display: none; flex-direction: column; gap: 0; width: 100%; }
   .site-nav.open { display: flex; }
-  .site-nav a { font-family: var(--serif); font-size: 2rem; color: var(--ink); padding: 8px 0; border: 0; }
+  .site-nav a { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; font-size: 2rem; color: var(--ink); padding: 8px 0; border: 0; }
 }
 
 /* Main */
@@ -179,7 +179,7 @@ main {
 .contact { padding: clamp(48px, 10vw, 128px) 0; max-width: 40rem; }
 .contact p { font-size: 1.1rem; color: var(--muted); }
 .contact-email { margin: 32px 0; }
-.contact-email a { font-family: var(--serif); font-size: clamp(1.6rem, 5vw, 2.75rem); color: var(--ink); word-break: break-word; }
+.contact-email a { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; font-size: clamp(1.6rem, 5vw, 2.75rem); color: var(--ink); word-break: break-word; }
 .contact-email a:hover { color: var(--accent); }
 .contact-links { list-style: none; padding: 0; margin: 0; display: flex; gap: 28px; font-weight: 500; }
 
