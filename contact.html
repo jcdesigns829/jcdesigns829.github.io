@@ -1,114 +1,50 @@
-<!DOCTYPE html>
-<!-- This website template was created by: Student's First Name Student's Last Name -->
+<!doctype html>
 <html lang="en">
-<head>
-	<title>Contact Us - Location | Forward Fitness Club</title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Forward Fitness Club provides a complimentary one-week trial membership. Contact us today to learn more.">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap" rel="stylesheet">
-</head>
-<body>
-<div id="container">
-	<!-- Use the header area for the website name or logo -->
-		<header id="jc-logo">
-		
-		<!--Skip to Content Link -->
-		<a class="skip" href="#content">Skip to Content</a>
-			<a href="index.html"><img src="images/jc-logo.png" alt="Jack Carlin logo" height="250" width="250"></a>
-		</header>
-			
-			<a class="menu=icon" onclick="hamburger()">
-				<div>&#9776;</div>
-			</a>
-		</nav>
-	
-		
-	<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
-			<ul>
-                <li><a href="index.html">Home</a></li> 
-                 <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About Me</a></li> 
-                <li><a href="artwork.html">Artwork</a></li> 
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-		</nav>
-        
-       
-		
-		<!-- Use the main area to add the main content of the webpage -->
-		<main>
-		<main id="content">
-			
-	
-	
-	
-	
-			<div id="form">
-		
-			<h2>Complete the form below to contact me.</h2>
-			
-			<form class="form-grid"><!--Start Form-->
-			
-			<fieldset>
-				<legend>Customer Information</legend>
-				<label for="fName">First Name:</label>
-				<input type="text" name="fName" id="fName" required>
-			
-			<label for="lName">Last Name:</label>
-			<input type="text" name="lName" id="lName" required>
-			
-			<label for "email">Email:</label>
-			<input type="email" name="email" id="email">
-			
-			<label for"phone">Phone:</label>
-			<input type="tel" id="phone" name="phone" required>
-			</fieldset>
-			
-			<fieldset>
-				<legend>Additional Information</legend>
-				<p>I would like more information about:</p>
-				
-				<label for="prsnl intrsts"><input type="checkbox" name="personal interest" id="intrst" value="Personal Interests">Personal Interests</label>
-				
-				<label for="gls"><input type="checkbox" name="gls" id="gls" value="Goals">Life Goals</label>
-				
-				<label for="proj"><input type="checkbox" name="interest" id="proj" value="Projects">Projects</label>
-			</fieldset>
-			
-			<fieldset>
-				<legend>Referral Source</legend>
-				<select name="reference" id="reference">
-					<option value="ad">Advertisement</option>
-					<option value="friend">Friend</option>
-					<option value="google">Google</option>
-					<option value="social">Social Media</option>
-					<option value="other">Other</option>
-				</select>
-				
-				<label for="questions"> Questions?</label>
-				<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
-			</fieldset>
-			
-			<input type="submit" id="submit" value ="Submit" class="btn”>
-				
-		</form>
-		
-		</main>
-		<!-- Use the footer area to add webpage footer content -->
-		<footer>
-			<div class="copyright">
-			<p>&copy; Copyright 2024. All Rights Reserved.</p>
-			<p><a href="mailto:myjackcarlin@gmail.com">myjackcarlin@gmail.com</a></p>
-			</div>
-			<div class="social">
-				<a href=https://www.linkedin.com/in/jack-carlin-65181b230><img src="images/linkedin-logo.png" alt="black and white LinkedIn Logo"></a>
-				<a href=https://www.instagram.com/jackgotgame829><img src="images/instagram-logo.png" alt="black and white Instagram Logo"></a>
-				</div>
-		</footer>
-	</div>
-			<script src="scripts/script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="description" content="Contact New York based artist and designer Jack Carlin." />
+    <title>Contact — JCDesigns</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="JCDesigns home"><picture class="wordmark-picture"><source srcset="assets/jc-logo.webp" type="image/webp" /><img class="wordmark-logo" src="assets/jc-logo.png" alt="" /></picture><span>JCDesigns<span class="wordmark-period">.</span></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="artwork.html">Artwork</a>
+        <a class="nav-link" href="about.html">About</a><a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link nav-contact is-active" aria-current="page" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main" class="page-width inner-page contact-page">
+      <section class="contact-layout" aria-labelledby="page-title">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Questions, projects, kind hellos</p>
+          <h1 id="page-title">Let’s start a <span class="serif-accent">conversation.</span></h1>
+          <p>If you’d like to talk about my work, have a project in mind, or just want to say hello, drop me a note. I’d love to hear from you.</p>
+          <a class="contact-email" href="mailto:jackcarlindesigns@gmail.com">jackcarlindesigns@gmail.com <span aria-hidden="true">↗</span></a>
+          <p class="contact-response">Based in New York · Open to creative conversations</p>
+        </div>
+        <div class="contact-art" aria-hidden="true">
+          <div class="contact-art-circle"></div>
+          <div class="contact-art-square"></div>
+          <div class="contact-art-note"><span>GOOD IDEAS</span><span>START WITH</span><span>A HELLO.</span></div>
+          <div class="contact-art-sticker">JC<br /><span>DESIGNS</span></div>
+        </div>
+      </section>
+      <section class="contact-more" aria-labelledby="elsewhere-title">
+        <div><p class="section-kicker">FIND ME ELSEWHERE</p><h2 id="elsewhere-title">A couple more links.</h2></div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/jack-carlin-65181b230" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://www.instagram.com/jackgotgame829" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-name" href="index.html">JCDesigns<span>.</span></a><p>Made with curiosity in New York.</p>
+      <div class="footer-links"><a href="artwork.html">Artwork</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div><span class="footer-copy">© 2026</span>
+    </footer>
+  </body>
 </html>
