@@ -230,7 +230,7 @@ p {
   color: var(--red);
   font-family: var(--serif);
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: -0.075em;
 }
 
