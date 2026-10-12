@@ -1,62 +1,82 @@
-<!DOCTYPE html>
-<!-- This website template was created by: Student's First Name Student's Last Name -->
+<!doctype html>
 <html lang="en">
-<head>
-	<title>Personal Portfolio - Jack Carlin | Portfolio Website</title>
-	<meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap" rel="stylesheet">
-</head>
-<body>
-
-	<div id="container">
-
-		<!-- Use the header area for the website name or logo -->
-		<header>
-			<a href="index.html"><img src="images/jc-logo.png" alt="JC Logo" height="250" width="250"></a>
-			<!--Skip to Content Link -->
-				<a class="skip" href="#content">Skip to Content</a>
-		</header>
-		
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
-			<ul>
-                <li><a href="index.html">Home</a></li> 
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="about.html">About Me</a></li> 
-                <li><a href="artwork.html">Artwork</a></li> 
-                <li><a href="contact.html">Contact Me</a></li>
-            </ul>
-		</nav>
-		
-		<!-- Use the main area to add the main content of the webpage -->
-		<main>
-		 <main id="content">
-			<div class="grid">
-			<img src="images/resume.png" alt="My Resume" class="top" width="500" height="500"></a>
-					
-			
-		
-		</div>
-		</main> 
-		
-		
-		<!-- Use the footer area to add webpage footer content -->
-		
-		<footer>
-			<div class="copyright">
-			<p>&copy; Copyright 2024. All Rights Reserved.</p>
-			<p><a href="mailto:myjackcarlin@gmail.com">myjackcarlin@gmail.com</a></p>
-			</div>
-			<div class="social">
-				<a href=https://www.linkedin.com/in/jack-carlin-65181b230><img src="images/linkedin-logo.png" alt="black and white LinkedIn Logo"></a>
-				<a href=https://www.instagram.com/jackgotgame829><img src="images/instagram-logo.png" alt="black and white Instagram Logo"></a>
-				</div>
-			</div>
-		</footer>
-	
-	</div>
-			<script src="scripts/script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta name="description" content="Education, experience, honors, and creative skills for designer Jack Carlin." />
+    <title>Resume — JCDesigns</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="JCDesigns home"><picture class="wordmark-picture"><source srcset="assets/jc-logo.webp" type="image/webp" /><img class="wordmark-logo" src="assets/jc-logo.png" alt="" /></picture><span>JCDesigns<span class="wordmark-period">.</span></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a><a class="nav-link" href="artwork.html">Artwork</a>
+        <a class="nav-link" href="about.html">About</a><a class="nav-link is-active" aria-current="page" href="resume.html">Resume</a>
+        <a class="nav-link nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main" class="page-width inner-page resume-page">
+      <section class="page-intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> A snapshot of my experience</p>
+        <h1 id="page-title">The <span class="serif-accent">resume</span><span class="headline-period">.</span></h1>
+        <p>Digital media, graphic design, and a hands-on approach to making things.</p>
+      </section>
+      <section class="resume-sheet" aria-label="Resume details">
+        <div class="resume-overview">
+          <div><p class="section-kicker">JACK CARLIN</p><h2>Digital media<br />&amp; graphic design</h2></div>
+          <a class="resume-email" href="mailto:jackcarlindesigns@gmail.com">jackcarlindesigns@gmail.com</a>
+        </div>
+        <section class="resume-section" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="resume-entry">
+            <div><h3>Marist University</h3><p>Bachelor of Science, Digital Media<br />Graphic Design concentration</p></div>
+            <p class="resume-date">December 2025<br />Poughkeepsie, NY</p>
+          </div>
+          <p class="resume-detail">Graduated Cum Laude · Major GPA 3.62 · Overall GPA 3.48</p>
+          <p class="resume-detail">Coursework includes graphic design, digital painting, digital animation, digital photography, 3D design, multimedia authoring, and design for the web.</p>
+        </section>
+        <section class="resume-section" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience</h2>
+          <div class="resume-entry">
+            <div><h3>JC Designs</h3><p>Freelance creative work</p></div><p class="resume-date">January 2026–Present</p>
+          </div>
+          <ul class="resume-bullets"><li>Created ad hoc projects in animation and flyer and poster graphics.</li></ul>
+          <div class="resume-entry">
+            <div><h3>Jetro / Restaurant Depot</h3><p>Junior Graphic Intern / Marketing Assistant · Whitestone, NY</p></div><p class="resume-date">May–August 2025</p>
+          </div>
+          <ul class="resume-bullets">
+            <li>Created marketing materials including sale sheets, posters, flyers, and signage.</li>
+            <li>Applied spacing and sizing principles to produce visually effective designs.</li>
+            <li>Coordinated projects across teams and proofread creative submissions before print.</li>
+          </ul>
+          <div class="resume-entry">
+            <div><h3>The STEM Alliance Co-Op Camp</h3><p>Maker Intern · Mamaroneck, NY</p></div><p class="resume-date">Summers 2022–2024</p>
+          </div>
+          <ul class="resume-bullets">
+            <li>Introduced campers to animation, including stop-motion filmmaking.</li>
+            <li>Helped students use animation tools and develop their own short films.</li>
+          </ul>
+        </section>
+        <div class="resume-columns">
+          <section class="resume-section" aria-labelledby="skills-title">
+            <h2 id="skills-title">Creative tools</h2>
+            <p>Adobe Photoshop, Illustrator, InDesign, Lightroom Classic, Animate, After Effects, Autodesk Fusion 360, Tinkercad, CAD modeling, and 3D printing.</p>
+          </section>
+          <section class="resume-section" aria-labelledby="honors-title">
+            <h2 id="honors-title">Honors &amp; activities</h2>
+            <p>Dean’s List · Annual Academic Grant · Delta Alpha Pi Honor Society · Kappa Pi International Art Honor Society</p>
+            <p>Marist Club TV · Marist Game Society · Animation Team for Wally’s World Comic Book</p>
+          </section>
+        </div>
+      </section>
+      <p class="resume-note">Want to talk about my experience or see a particular project? <a href="contact.html">Get in touch.</a></p>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-name" href="index.html">JCDesigns<span>.</span></a><p>Made with curiosity in New York.</p>
+      <div class="footer-links"><a href="artwork.html">Artwork</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div><span class="footer-copy">© 2026</span>
+    </footer>
+  </body>
 </html>
