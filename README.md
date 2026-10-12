@@ -8,6 +8,7 @@ A static portfolio site for Jack Carlin, built with Jekyll, HTML, CSS, and JavaS
 - `artwork.html` is the filterable artwork gallery.
 - `about.html`, `resume.html`, and `contact.html` are the portfolio pages.
 - `Gemfile` pins the site to Jekyll 4.x; `.ruby-version` selects Ruby 3.3.6.
+- The appearance toggle supports system light/dark preferences and remembers a manual choice in the browser.
 
 ## Updating the gallery
 
