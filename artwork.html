@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f7f5ef" />
     <meta name="description" content="A gallery of Jack Carlin's student artwork, from paintings and illustrations to graphic design and animation." />
+    <script>
+      (() => {
+        try {
+          const theme = localStorage.getItem("jcdesigns-theme");
+          if (theme === "light" || theme === "dark") {
+            document.documentElement.dataset.theme = theme;
+          }
+        } catch {}
+      })();
+    </script>
     <title>Artwork — JCDesigns</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -19,6 +29,11 @@
         <a class="nav-link" href="resume.html">Resume</a>
         <a class="nav-link is-active" aria-current="page" href="artwork.html">Artwork</a>
         <a class="nav-link nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2A8.5 8.5 0 0 1 8.8 3.9a8.6 8.6 0 1 0 11.3 11.3Z" /></svg>
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+          <span>Dark</span>
+        </button>
       </nav>
     </header>
     <main id="main" class="page-width inner-page">
