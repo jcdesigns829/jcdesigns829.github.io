@@ -1,20 +1,147 @@
 <!DOCTYPE html>
-<html><head><title>JCDesigns</title>
-<link rel="stylesheet" href="style.css"></head>
-<body>
-<header><div class="logo">JCDesigns</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="resume.html">Resume</a>
-<a href="artwork.html">Artwork</a>
-<a href="contact.html">Contact</a>
-</nav></header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JCDesigns | Graphic Design Portfolio</title>
+    <meta
+      name="description"
+      content="A bold, colorful, minimal portfolio for JCDesigns featuring design, digital media, and visual storytelling."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="brand-wrap" aria-label="JCDesigns home">
+          <span class="brand-mark">JC</span>
+          <span class="brand-text">JCDesigns</span>
+        </div>
 
-<section class="hero">
-<h1>JCDesigns</h1>
-<p>Graphic Design • Digital Media</p>
-</section>
+        <nav aria-label="Main navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="artwork.html">Artwork</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<footer>© 2026 JCDesigns</footer>
-</body></html>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Graphic Designer • Digital Media</p>
+          <h1 id="hero-title">Bold ideas, clean execution, colorful stories.</h1>
+          <p class="lede">
+            I create visual systems, digital art, and memorable brand experiences that turn creative concepts into work people notice.
+          </p>
+
+          <div class="cta-row">
+            <a class="button primary" href="artwork.html">View my work</a>
+            <a class="button secondary" href="contact.html">Book a project</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Portfolio stats">
+            <li>
+              <strong>8+</strong>
+              <span>Years</span>
+            </li>
+            <li>
+              <strong>50+</strong>
+              <span>Projects</span>
+            </li>
+            <li>
+              <strong>100%</strong>
+              <span>Creative</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <div class="artboard">
+              <div class="art-top">
+                <span>Visual Identity</span>
+                <div class="dots"><span></span><span></span><span></span></div>
+              </div>
+
+              <div class="mock-canvas">
+                <div class="shape one"></div>
+                <div class="shape two"></div>
+                <div class="shape three"></div>
+                <div class="mock-label">Brand systems + digital storytelling</div>
+              </div>
+
+              <div class="art-top">
+                <span>Creative direction</span>
+                <strong>2026</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="selected-work-title">
+        <div class="section-head">
+          <p class="section-label" id="selected-work-title">Selected work</p>
+          <a href="artwork.html">See all projects</a>
+        </div>
+
+        <div class="projects">
+          <article class="project-card">
+            <div class="project-preview preview-1"></div>
+            <h2>Brand Identity</h2>
+            <p>Visual systems crafted to be confident, memorable, and built for long-term recognition.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-2"></div>
+            <h2>Digital Art</h2>
+            <p>Layered compositions that balance bold color, motion, and clean storytelling.</p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-preview preview-3"></div>
+            <h2>Creative Direction</h2>
+            <p>High-impact concepts for campaigns, promotion, and web-first brand presence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="value-strip" aria-label="Core strengths">
+        <div class="value-item">Brand systems</div>
+        <div class="value-item">Visual storytelling</div>
+        <div class="value-item">Digital design</div>
+        <div class="value-item">Creative strategy</div>
+      </section>
+
+      <section class="about-wrap" aria-labelledby="about-title">
+        <div class="photo-panel" aria-hidden="true"></div>
+
+        <div class="about-copy">
+          <p class="section-label">About</p>
+          <h2 id="about-title">Design with energy and intention.</h2>
+          <p>
+            JCDesigns blends sharp visual thinking with bold, modern aesthetics to create work that feels polished, expressive, and distinctly memorable.
+          </p>
+          <p>
+            From identity work to digital graphics and creative concepts, each project is shaped to communicate clearly while standing out in a crowded visual world.
+          </p>
+          <a class="button secondary" href="about.html">Learn more</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-bar">
+        <div>© 2026 JCDesigns</div>
+        <div class="footer-links">
+          <a href="artwork.html">Artwork</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
