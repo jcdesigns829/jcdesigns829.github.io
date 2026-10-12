@@ -1,2 +1,10 @@
 title: JCDesigns
 description: Artwork and creative work by Jack Carlin.
+markdown: kramdown
+future: true
+exclude:
+  - .github
+  - .ruby-version
+  - Gemfile
+  - Gemfile.lock
+  - README.md
