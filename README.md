@@ -13,7 +13,7 @@ A static portfolio site for Jack Carlin, built with Jekyll, HTML, CSS, and JavaS
 
 Gallery items live in `artwork.html`. Each `.gallery-card` has a `data-category` value matching one of the category filters. Add new images to the repository and update the card's image, alternative text, title, category, and unique anchor ID together. The senior thesis pieces are stored in `assets/`.
 
-The original school artwork files are kept at the repository root. The supplied senior thesis pieces and brand logo are in `assets/`; their original PNGs are preserved, and local WebP versions are used when a browser supports them. Replace a PNG and regenerate its matching WebP to update one of these images.
+The original school artwork files are kept at the repository root. The supplied senior thesis pieces are in `assets/`; their original PNGs are preserved, and local WebP versions are used when a browser supports them. Replace a PNG and regenerate its matching WebP to update one of these images.
 
 ## Build locally
 
