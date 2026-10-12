@@ -209,10 +209,10 @@ p {
 
 .serif-accent {
   color: var(--red);
-  font-family: var(--serif);
-  font-weight: 500;
+  font-family: inherit;
+  font-weight: 750;
   font-style: normal;
-  letter-spacing: -0.075em;
+  letter-spacing: inherit;
 }
 
 .headline-comma {
