@@ -1,68 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5ef" />
-    <meta name="description" content="Contact New York based artist and designer Jack Carlin." />
-    <script>
-      (() => {
-        try {
-          const theme = localStorage.getItem("jcdesigns-theme");
-          if (theme === "light" || theme === "dark") {
-            document.documentElement.dataset.theme = theme;
-          }
-        } catch {}
-      })();
-    </script>
-    <title>Contact — JCDesigns</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="wordmark" href="index.html" aria-label="JCDesigns home"><span>JCDesigns<span class="wordmark-period">.</span></span></a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link" href="artwork.html">Artwork</a>
-        <a class="nav-link nav-contact is-active" aria-current="page" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2A8.5 8.5 0 0 1 8.8 3.9a8.6 8.6 0 1 0 11.3 11.3Z" /></svg>
-          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
-          <span>Dark</span>
-        </button>
-      </nav>
-    </header>
-    <main id="main" class="page-width inner-page contact-page">
-      <section class="contact-layout" aria-labelledby="page-title">
-        <div class="contact-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Questions, projects, kind hellos</p>
-          <h1 id="page-title">Let’s start a <span class="serif-accent">conversation.</span></h1>
-          <p>If you’d like to talk about my work, have a project in mind, or just want to say hello, drop me a note. I’d love to hear from you.</p>
-          <a class="contact-email" href="mailto:jackcarlindesigns@gmail.com">jackcarlindesigns@gmail.com <span aria-hidden="true">↗</span></a>
-          <p class="contact-response">Based in New York · Open to creative conversations</p>
-        </div>
-        <div class="contact-art" aria-hidden="true">
-          <div class="contact-art-circle"></div>
-          <div class="contact-art-square"></div>
-          <div class="contact-art-note"><span>GOOD IDEAS</span><span>START WITH</span><span>A HELLO.</span></div>
-          <div class="contact-art-sticker">JC<br /><span>DESIGNS</span></div>
-        </div>
-      </section>
-      <section class="contact-more" aria-labelledby="elsewhere-title">
-        <div><p class="section-kicker">FIND ME ELSEWHERE</p><h2 id="elsewhere-title">A couple more links.</h2></div>
-        <div class="contact-socials">
-          <a href="https://www.linkedin.com/in/jack-carlin-65181b230" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          <a href="https://www.instagram.com/jackgotgame829" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <a class="footer-name" href="index.html">JCDesigns<span>.</span></a><p>Made with curiosity in New York.</p>
-      <div class="footer-links"><a href="artwork.html">Artwork</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div><span class="footer-copy">© 2026</span>
-    </footer>
-  </body>
-</html>
+---
+layout: default
+title: Contact
+---
+<section class="contact">
+  <h1>Let's make something.</h1>
+  <p>Open to freelance projects, collaborations and full-time roles. The fastest way to reach me is email.</p>
+  <p class="contact-email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  <ul class="contact-links">
+    <li><a href="{{ site.social.linkedin }}" rel="noopener">LinkedIn</a></li>
+    <li><a href="{{ site.social.instagram }}" rel="noopener">Instagram</a></li>
+  </ul>
+</section>

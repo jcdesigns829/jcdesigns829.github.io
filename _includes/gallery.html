@@ -1,0 +1,22 @@
+{% assign pieces = site.data.work %}
+{% if include.section %}{% assign pieces = pieces | where: "section", include.section %}{% endif %}
+{% if include.featured %}{% assign pieces = pieces | where: "featured", true %}{% endif %}
+<ul class="gallery">
+  {% for piece in pieces %}
+  {% assign src = '/images/work/' | append: piece.image | relative_url %}
+  <li class="piece">
+    <a href="{{ src }}" class="piece-link" data-title="{{ piece.title }}" data-category="{{ piece.section }}">
+      <img src="{{ src }}" alt="{{ piece.alt }}" loading="lazy">
+    </a>
+    <p class="piece-meta"><span class="piece-title">{{ piece.title }}</span> <span class="piece-cat">{{ piece.section }}</span></p>
+  </li>
+  {% endfor %}
+</ul>
+
+<dialog class="lightbox" aria-label="Artwork viewer">
+  <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+  <figure>
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+</dialog>

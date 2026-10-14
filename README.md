@@ -1,34 +1,29 @@
 # JCDesigns
 
-A static portfolio site for Jack Carlin, built with Jekyll, HTML, CSS, and JavaScript. Cloudflare Pages builds and publishes the generated site.
+Portfolio site for Jack Carlin — built with Jekyll and hosted on GitHub Pages at https://jcdesigns829.github.io.
 
-## Pages
+## Structure
 
-- `index.html` is the home page.
-- `artwork.html` is the filterable artwork gallery.
-- `about.html`, `resume.html`, and `contact.html` are the portfolio pages.
-- `Gemfile` pins the site to Jekyll 4.x; `.ruby-version` selects Ruby 3.3.6.
-- The appearance toggle supports system light/dark preferences and remembers a manual choice in the browser.
+- `index.html`, `about.html`, `artwork.html`, `resume.html`, `contact.html` — pages
+- `seniorthesis.html`, `graphicdesign.html`, `digitalillustration.html`, `digitalpaintings.html`, `basicpaintings.html`, `animation.html` — artwork sections
+- `css/styles.css` — all styles
+- `scripts/script.js` — mobile menu and lightbox
+- `images/work/` — artwork; `images/` — logo, portrait, resume
+- `_data/work.yml` — every piece of artwork; **add new pieces here**
+- `_data/sections.yml` — the Artwork page sections and their cover images
+- `_layouts/default.html`, `_includes/` — shared page shell, header, footer, gallery
 
-## Updating the gallery
+## Adding artwork
 
-Gallery items live in `artwork.html`. Each `.gallery-card` has a `data-category` value matching one of the category filters. Add new images to the repository and update the card's image, alternative text, title, category, and unique anchor ID together. The senior thesis pieces are stored in `assets/`.
+1. Put the image in `images/work/` (keep it under ~2000px on the long side).
+2. Add an entry to `_data/work.yml` with `title`, `section`, `image` and `alt` (add `featured: true` to show it on the home page).
+3. Commit and push to `main` — GitHub Pages rebuilds automatically.
 
-The original school artwork files are kept at the repository root. The supplied senior thesis pieces are in `assets/`; their original PNGs are preserved, and local WebP versions are used when a browser supports them. Replace a PNG and regenerate its matching WebP to update one of these images.
+## Run locally
 
-## Build locally
-
-Install Ruby 3.3.6 and Bundler, then run:
+Requires Ruby 3+.
 
 ```sh
 bundle install
-bundle exec jekyll build
+bundle exec jekyll serve
 ```
-
-Jekyll writes the generated site to `_site/`. To preview it locally, run `bundle exec jekyll serve` and open the URL printed by Jekyll.
-
-## Publish with Cloudflare Pages
-
-Connect this GitHub repository to Cloudflare Pages using **Workers & Pages → Create application → Pages → Connect to Git**. Choose the `main` branch for production deployments. Set the build command to `bundle exec jekyll build` and the build output directory to `_site`. Set the `JEKYLL_ENV` environment variable to `production` and `RUBY_VERSION` to `3.3.6`, matching `.ruby-version`. Cloudflare Pages then builds and deploys each update pushed to `main`. Preview deployments can be enabled for pull requests.
-
-The GitHub Actions workflow in `.github/workflows/jekyll.yml` separately builds the site for pull requests and pushes to `main`. Cloudflare account access and the Pages project/domain are configured in the Cloudflare dashboard; no Cloudflare credentials are stored in this repository.
