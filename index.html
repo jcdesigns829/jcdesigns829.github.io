@@ -1,13 +1,143 @@
----
-layout: default
-title: Jack Carlin — Graphic Designer
----
-<section class="intro">
-  <p class="eyebrow">Graphic Design &bull; Digital Media</p>
-  <h1>Jack Carlin is a graphic designer <em>making bright, playful work</em> from Larchmont, New York.</h1>
-  <p class="intro-links"><a href="{{ '/artwork.html' | relative_url }}">See the artwork</a> <a href="{{ '/contact.html' | relative_url }}">Get in touch</a></p>
-</section>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5ef" />
+    <meta
+      name="description"
+      content="Selected artwork, graphic design, and digital media by Jack Carlin."
+    />
+    <script>
+      (() => {
+        try {
+          const theme = localStorage.getItem("jcdesigns-theme");
+          if (theme === "light" || theme === "dark") {
+            document.documentElement.dataset.theme = theme;
+          }
+        } catch {}
+      })();
+    </script>
+    <title>JCDesigns — Graphic &amp; UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="JCDesigns home">
+        <span>JCDesigns<span class="wordmark-period">.</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="nav-link is-active" aria-current="page" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+        <a class="nav-link" href="artwork.html">Artwork</a>
+        <a class="nav-link nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2A8.5 8.5 0 0 1 8.8 3.9a8.6 8.6 0 1 0 11.3 11.3Z" /></svg>
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+          <span>Dark</span>
+        </button>
+      </nav>
+    </header>
 
-{% include gallery.html featured=true %}
+    <main id="main">
+      <section class="home-hero page-width" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Graphic designer · Marist University ’25</p>
+          <h1 id="hero-title">Making room<br />for <span class="serif-accent">color</span><span class="headline-comma">,</span><br />curiosity &amp; play<span class="headline-period">.</span></h1>
+          <p class="hero-description">
+            I’m Jack, a digital media graphic designer shifting into UI/UX and product design
+            for the creative and brand design industry. I like bold ideas, hands-on experiments,
+            and the little details that make a visual story stick.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="artwork.html">Explore the artwork <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="about.html">A little about me <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="hero-note"><span class="note-rule"></span> A collection of work made while learning, looking, and trying things out.</p>
+        </div>
+        <div class="hero-art" aria-label="Portrait of Jack alongside colorful abstract shapes">
+          <div class="hero-art-frame">
+            <img src="me.png" alt="Portrait of Jack Carlin" fetchpriority="high" />
+          </div>
+          <span class="hero-shape hero-shape-blue" aria-hidden="true"></span>
+          <span class="hero-shape hero-shape-teal" aria-hidden="true"></span>
+          <span class="hero-art-caption">Curious by nature. Always making.</span>
+        </div>
+      </section>
 
-<p class="more"><a href="{{ '/artwork.html' | relative_url }}">All artwork &rarr;</a></p>
+      <section class="selected-work page-width" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A few things I’ve made</p>
+            <h2 id="work-title">Selected <span class="serif-accent">work</span></h2>
+          </div>
+          <a class="text-link desktop-link" href="artwork.html">The full gallery <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="work-grid">
+          <a class="work-card work-card-tall" href="artwork.html#digital-paintings">
+            <div class="work-image work-image-road"><img src="color-digitpaint.jpg" alt="Painted view down a road between autumn-colored hills under a blue sky" loading="lazy" /></div>
+            <span class="work-meta"><span>Digital painting</span><span>01</span></span>
+            <h3>On the way somewhere</h3>
+          </a>
+          <a class="work-card" href="artwork.html#graphic-design">
+            <div class="work-image work-image-supes"><img src="supes.jpg" alt="Superhero character artwork with bold red SUPES lettering" loading="lazy" /></div>
+            <span class="work-meta"><span>Graphic design</span><span>02</span></span>
+            <h3>Supes</h3>
+          </a>
+          <a class="work-card" href="artwork.html#digital-illustration">
+            <div class="work-image work-image-rabbit"><img src="licensing.png" alt="Colorful hand-drawn rabbit in a sunny garden" loading="lazy" /></div>
+            <span class="work-meta"><span>Digital illustration</span><span>03</span></span>
+            <h3>Spring bunny</h3>
+          </a>
+        </div>
+        <a class="text-link mobile-link" href="artwork.html">The full gallery <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section id="case-studies" class="case-studies page-width" aria-labelledby="case-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">How I work</p>
+            <h2 id="case-title">Case <span class="serif-accent">studies</span></h2>
+          </div>
+        </div>
+        <a class="case-card" href="logo-project.html">
+          <div class="case-card-image"><img src="jc-logo.png" alt="JC Designs logo" width="2550" height="2550" loading="lazy" /></div>
+          <div>
+            <span class="work-meta"><span>Brand identity</span></span>
+            <h3>JC Designs logo</h3>
+            <p>From first sketches to the final mark: the brief, the directions I explored, and what changed along the way.</p>
+            <span class="text-link">Read the case study <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </section>
+
+      <section class="home-about" aria-labelledby="about-teaser-title">
+        <div class="home-about-inner page-width">
+          <p class="about-index">01 / A LITTLE ABOUT ME</p>
+          <div class="about-teaser-copy">
+            <h2 id="about-teaser-title">Different mediums.<br /><span class="serif-accent">Same curiosity.</span></h2>
+            <p>From sketchbook experiments to digital artwork and design, I’m drawn to making things that feel thoughtful, bright, and a little unexpected.</p>
+            <a class="button button-outline" href="about.html">Get to know me <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about-teaser-image"><img src="house-painting.png" alt="Painted interior study with a window and a blue sofa" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <section class="home-contact page-width" aria-labelledby="contact-teaser-title">
+        <p class="eyebrow">Have a project in mind?</p>
+        <h2 id="contact-teaser-title">Let’s make<br /><span class="serif-accent">something</span> together.</h2>
+        <a class="button button-red" href="contact.html">Say hello <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-name" href="index.html">JCDesigns<span>.</span></a>
+      <p>Made with curiosity in New York.</p>
+      <div class="footer-links"><a href="artwork.html">Artwork</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div>
+      <span class="footer-copy">© 2026</span>
+    </footer>
+  </body>
+</html>
