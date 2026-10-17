@@ -1,67 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5ef" />
-    <meta name="description" content="Meet Jack Carlin, a digital media graphic designer from New York shifting into UI/UX and product design." />
-    <script>
-      (() => {
-        try {
-          const theme = localStorage.getItem("jcdesigns-theme");
-          if (theme === "light" || theme === "dark") {
-            document.documentElement.dataset.theme = theme;
-          }
-        } catch {}
-      })();
-    </script>
-    <title>About — JCDesigns</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="wordmark" href="index.html" aria-label="JCDesigns home"><span>JCDesigns<span class="wordmark-period">.</span></span></a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link is-active" aria-current="page" href="about.html">About</a>
-        <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link" href="artwork.html">Artwork</a>
-        <a class="nav-link nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2A8.5 8.5 0 0 1 8.8 3.9a8.6 8.6 0 1 0 11.3 11.3Z" /></svg>
-          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
-          <span>Dark</span>
-        </button>
-      </nav>
-    </header>
-    <main id="main" class="page-width inner-page about-page">
-      <section class="page-intro" aria-labelledby="page-title">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> The person behind the pixels &amp; paint</p>
-        <h1 id="page-title">Hi, I’m <span class="serif-accent">Jack.</span></h1>
-        <p>Artist, designer, collector of references, and a believer that good work starts with a little curiosity.</p>
-      </section>
-      <section class="about-profile" aria-label="About Jack Carlin">
-        <div class="about-profile-photo"><img src="me.png" alt="Jack Carlin" /></div>
-        <div class="about-profile-copy">
-          <p class="section-kicker">A CREATIVE PRACTICE IN PROGRESS</p>
-          <h2>Looking closely.<br /><span class="serif-accent">Making freely.</span></h2>
-          <p>I’m a digital media graphic designer from Larchmont, New York, shifting into UI/UX and product design in the creative and brand design industry. I graduated from Marist University in 2025 with a B.S. in Digital Media and a concentration in Graphic Design.</p>
-          <p>I’ve always been interested in the work of artists who came before me. Looking at how they made things—their techniques, choices, and ways of seeing—gives me new ideas to explore in my own projects.</p>
-          <p>My work moves between digital painting, illustration, animation, graphic design, and traditional painting. I enjoy the process of trying a new medium, figuring out how it works, and letting a bit of play into the final result.</p>
-          <a class="text-link" href="artwork.html">Take a look around the gallery <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-      <section class="about-values" aria-label="Creative interests">
-        <article><span class="value-index">01</span><h2>Stay curious</h2><p>Art history, a new technique, or a fresh point of view can all lead somewhere unexpected.</p></article>
-        <article><span class="value-index">02</span><h2>Try another medium</h2><p>From a sketchbook to a screen, each format invites a different kind of experiment.</p></article>
-        <article><span class="value-index">03</span><h2>Keep it human</h2><p>Honest ideas and thoughtful details make work feel like it came from a real person.</p></article>
-      </section>
-    </main>
-    <footer class="site-footer">
-      <a class="footer-name" href="index.html">JCDesigns<span>.</span></a><p>Made with curiosity in New York.</p>
-      <div class="footer-links"><a href="artwork.html">Artwork</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div><span class="footer-copy">© 2026</span>
-    </footer>
-  </body>
-</html>
+---
+layout: default
+title: About
+---
+<div class="about">
+  <img class="portrait" src="{{ '/images/me.png' | relative_url }}" alt="Portrait of Jack Carlin" width="854" height="1200">
+  <div class="prose">
+    <h1>About me</h1>
+    <p>I'm Jack Carlin, a recent graduate from Marist University in Digital Media Graphic Design, seeking my first role in the creative industry.</p>
+    <p>I grew up in Larchmont, New York. I'm always looking at past artists' work for inspiration, learning from their technique and bringing it into my own projects.</p>
+    <p><a class="button" href="{{ '/contact.html' | relative_url }}">Get in touch</a></p>
+  </div>
+</div>

@@ -1,108 +1,20 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f7f5ef" />
-    <meta name="description" content="A gallery of Jack Carlin's student artwork, from paintings and illustrations to graphic design and animation." />
-    <script>
-      (() => {
-        try {
-          const theme = localStorage.getItem("jcdesigns-theme");
-          if (theme === "light" || theme === "dark") {
-            document.documentElement.dataset.theme = theme;
-          }
-        } catch {}
-      })();
-    </script>
-    <title>Artwork — JCDesigns</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <a class="wordmark" href="index.html" aria-label="JCDesigns home"><span>JCDesigns<span class="wordmark-period">.</span></span></a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="resume.html">Resume</a>
-        <a class="nav-link is-active" aria-current="page" href="artwork.html">Artwork</a>
-        <a class="nav-link nav-contact" href="contact.html">Contact <span aria-hidden="true">↗</span></a>
-        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
-          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2A8.5 8.5 0 0 1 8.8 3.9a8.6 8.6 0 1 0 11.3 11.3Z" /></svg>
-          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
-          <span>Dark</span>
-        </button>
-      </nav>
-    </header>
-    <main id="main" class="page-width inner-page">
-      <section class="page-intro" aria-labelledby="page-title">
-        <h1 id="page-title">The <span class="serif-accent">artwork</span><span class="headline-period">.</span></h1>
-        <p>A growing collection of work made in and out of the classroom. Pick a medium to wander through.</p>
-      </section>
-      <section aria-label="Artwork gallery">
-        <div class="filter-row">
-          <p class="filter-label">Browse by medium</p>
-          <div class="filter-list" role="group" aria-label="Filter artwork by medium">
-            <button class="filter-button is-selected" type="button" data-filter="all" aria-pressed="true">All work</button>
-            <button class="filter-button" type="button" data-filter="digital-paintings" aria-pressed="false">Digital paintings</button>
-            <button class="filter-button" type="button" data-filter="graphic-design" aria-pressed="false">Graphic design</button>
-            <button class="filter-button" type="button" data-filter="digital-illustration" aria-pressed="false">Digital illustration</button>
-            <button class="filter-button" type="button" data-filter="digital-animation" aria-pressed="false">Digital animation</button>
-            <button class="filter-button" type="button" data-filter="basic-painting" aria-pressed="false">Basic painting</button>
-            <button class="filter-button" type="button" data-filter="senior-thesis" aria-pressed="false">Senior thesis</button>
-          </div>
-          <p class="visually-hidden" id="gallery-status" aria-live="polite"></p>
-        </div>
-        <div class="gallery-grid">
-          <article class="gallery-card gallery-card-featured" id="digital-paintings" data-category="digital-paintings">
-            <div class="gallery-image image-landscape"><img src="color-digitpaint.jpg" alt="Colorful painted road leading through autumn hills under a cloudy blue sky" loading="lazy" /></div>
-            <div class="gallery-caption"><div><p class="work-category">Digital paintings</p><h2>Fall road</h2></div><span class="work-number">01</span></div>
-          </article>
-          <article class="gallery-card" id="graphic-design" data-category="graphic-design">
-            <div class="gallery-image image-poster"><img src="supes.jpg" alt="Superhero poster with bold red lettering and a character in a mountain landscape" loading="lazy" /></div>
-            <div class="gallery-caption"><div><p class="work-category">Graphic design</p><h2>Supes</h2></div><span class="work-number">02</span></div>
-          </article>
-          <article class="gallery-card" id="digital-illustration" data-category="digital-illustration">
-            <div class="gallery-image image-illustration"><img src="licensing.png" alt="Hand-drawn rabbit in blue overalls surrounded by flowers and greenery" loading="lazy" /></div>
-            <div class="gallery-caption"><div><p class="work-category">Digital illustration</p><h2>Spring bunny</h2></div><span class="work-number">03</span></div>
-          </article>
-          <article class="gallery-card" id="digital-animation" data-category="digital-animation">
-            <div class="gallery-image image-animation"><img src="character-rotation.gif" alt="Animated character rotating through multiple views" loading="lazy" /></div>
-            <div class="gallery-caption"><div><p class="work-category">Digital animation</p><h2>Character rotation</h2></div><span class="work-number">04</span></div>
-          </article>
-          <article class="gallery-card" id="basic-painting" data-category="basic-painting">
-            <div class="gallery-image image-painting"><img src="house-painting.png" alt="Painted interior study of a room with a window and blue sofa" loading="lazy" /></div>
-            <div class="gallery-caption"><div><p class="work-category">Basic painting</p><h2>Room study</h2></div><span class="work-number">05</span></div>
-          </article>
-          <article class="gallery-card gallery-card-thesis" id="senior-thesis" data-category="senior-thesis">
-            <div class="gallery-image thesis-image"><picture><source srcset="assets/senior-thesis-spider.webp" type="image/webp" /><img src="assets/senior-thesis-spider.png" alt="Colorful masked spider character illustration with orange, teal, and blue shapes against a black background" loading="lazy" /></picture></div>
-            <div class="gallery-caption"><div><p class="work-category">Senior thesis</p><h2>Spider Sentinel</h2></div><span class="work-number">06</span></div>
-            <p class="thesis-note">Character artwork from my senior thesis.</p>
-          </article>
-          <article class="gallery-card gallery-card-thesis" id="senior-thesis-emblem" data-category="senior-thesis">
-            <div class="gallery-image thesis-image"><picture><source srcset="assets/senior-thesis-emblem.webp" type="image/webp" /><img src="assets/senior-thesis-emblem.png" alt="JC Designs title and spider emblem over a colorful comic-style composition" loading="lazy" /></picture></div>
-            <div class="gallery-caption"><div><p class="work-category">Senior thesis</p><h2>JC Designs emblem</h2></div><span class="work-number">07</span></div>
-            <p class="thesis-note">An illustrated identity built around the thesis character.</p>
-          </article>
-          <article class="gallery-card gallery-card-thesis" id="senior-thesis-composition" data-category="senior-thesis">
-            <div class="gallery-image thesis-image"><picture><source srcset="assets/senior-thesis-composition.webp" type="image/webp" /><img src="assets/senior-thesis-composition.png" alt="Graphic spider symbol surrounded by radiating red, teal, orange, and blue lines" loading="lazy" /></picture></div>
-            <div class="gallery-caption"><div><p class="work-category">Senior thesis</p><h2>Web of color</h2></div><span class="work-number">08</span></div>
-            <p class="thesis-note">A bold graphic study of the project’s colors and symbols.</p>
-          </article>
-          <article class="gallery-card gallery-card-thesis" id="senior-thesis-characters" data-category="senior-thesis">
-            <div class="gallery-image thesis-image"><picture><source srcset="assets/senior-thesis-characters.webp" type="image/webp" /><img src="assets/senior-thesis-characters.png" alt="Hand-drawn comic-style character with bright superhero symbols and energetic lines" loading="lazy" /></picture></div>
-            <div class="gallery-caption"><div><p class="work-category">Senior thesis</p><h2>Hero studies</h2></div><span class="work-number">09</span></div>
-            <p class="thesis-note">Character and symbol explorations from the thesis.</p>
-          </article>
-        </div>
-      </section>
-      <div class="gallery-bottom"><span>Six mediums, one ongoing practice.</span><a class="text-link" href="contact.html">Ask me about a piece <span aria-hidden="true">↗</span></a></div>
-    </main>
-    <footer class="site-footer">
-      <a class="footer-name" href="index.html">JCDesigns<span>.</span></a><p>Made with curiosity in New York.</p>
-      <div class="footer-links"><a href="artwork.html">Artwork</a><a href="resume.html">Resume</a><a href="contact.html">Contact</a></div><span class="footer-copy">© 2026</span>
-    </footer>
-  </body>
-</html>
+---
+layout: default
+title: Artwork
+---
+<header class="page-head">
+  <h1>Artwork</h1>
+</header>
+
+<ul class="sections">
+  {% for s in site.data.sections %}
+  {% assign count = site.data.work | where: "section", s.name | size %}
+  <li>
+    <a class="section-card" href="{{ s.page | relative_url }}">
+      <span class="section-cover"><img src="{{ '/images/work/' | append: s.cover | relative_url }}" alt="" loading="lazy"></span>
+      <span class="section-name">{{ s.name }}</span>
+      <span class="section-count">{{ count }} {% if count == 1 %}piece{% else %}pieces{% endif %}</span>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
