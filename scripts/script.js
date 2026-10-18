@@ -1,3 +1,32 @@
+// Theme toggle. System preference by default; a manual choice is saved in localStorage.
+const themeToggle = document.querySelector(".theme-toggle");
+const themePreference = window.matchMedia("(prefers-color-scheme: dark)");
+const themeColor = document.querySelector('meta[name="theme-color"]');
+const isDarkTheme = () => {
+  const chosen = document.documentElement.dataset.theme;
+  return chosen ? chosen === "dark" : themePreference.matches;
+};
+
+function updateThemeControl() {
+  const isDark = isDarkTheme();
+  if (themeColor) themeColor.content = isDark ? "#121211" : "#f7f6f2";
+  if (!themeToggle) return;
+  themeToggle.setAttribute("aria-pressed", String(isDark));
+  themeToggle.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} mode`);
+  themeToggle.lastElementChild.textContent = isDark ? "Light" : "Dark";
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const next = isDarkTheme() ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem("jcdesigns-theme", next); } catch (e) { /* applies for this page only */ }
+    updateThemeControl();
+  });
+  themePreference.addEventListener("change", updateThemeControl);
+}
+updateThemeControl();
+
 // Mobile menu
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.getElementById("site-nav");
