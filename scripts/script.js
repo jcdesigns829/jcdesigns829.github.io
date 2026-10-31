@@ -1,11 +1,7 @@
-// Theme toggle. System preference by default; a manual choice is saved in localStorage.
+// Theme toggle. Light by default; a manual choice is saved in localStorage.
 const themeToggle = document.querySelector(".theme-toggle");
-const themePreference = window.matchMedia("(prefers-color-scheme: dark)");
 const themeColor = document.querySelector('meta[name="theme-color"]');
-const isDarkTheme = () => {
-  const chosen = document.documentElement.dataset.theme;
-  return chosen ? chosen === "dark" : themePreference.matches;
-};
+const isDarkTheme = () => document.documentElement.dataset.theme === "dark";
 
 function updateThemeControl() {
   const isDark = isDarkTheme();
@@ -20,10 +16,9 @@ if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     const next = isDarkTheme() ? "light" : "dark";
     document.documentElement.dataset.theme = next;
-    try { localStorage.setItem("jcdesigns-theme", next); } catch (e) { /* applies for this page only */ }
+    try { localStorage.setItem("jcdesigns-theme-v2", next); } catch (e) { /* applies for this page only */ }
     updateThemeControl();
   });
-  themePreference.addEventListener("change", updateThemeControl);
 }
 updateThemeControl();
 
