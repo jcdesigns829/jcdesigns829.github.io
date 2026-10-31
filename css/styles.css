@@ -83,7 +83,13 @@ h1 em { font-style: normal; color: var(--muted); }
 
 .nav-toggle { display: none; }
 
-@media (max-width: 640px) {
+/* Tablet: tighter spacing so the full header fits on one line */
+@media (max-width: 900px) {
+  .site-header { column-gap: 16px; }
+  .site-nav { gap: 20px; }
+}
+
+@media (max-width: 740px) {
   .nav-toggle {
     display: grid; place-items: center; width: 44px; height: 44px;
     background: none; border: 0; color: var(--ink); cursor: pointer;
@@ -99,13 +105,19 @@ h1 em { font-style: normal; color: var(--muted); }
   .nav-toggle[aria-expanded="true"] .bars::after { transform: translateY(-7px) rotate(-45deg); }
 
   .brand img { width: 44px; height: 44px; }
-  .site-header { flex-wrap: wrap; column-gap: 16px; }
+  .site-header { flex-wrap: wrap; }
   .theme-toggle { order: 1; margin-left: auto; }
   .nav-toggle { order: 2; }
   .site-nav { order: 3; margin-left: 0; }
   .site-nav { display: none; flex-direction: column; gap: 0; width: 100%; }
   .site-nav.open { display: flex; }
   .site-nav a { font-family: var(--display); font-weight: 700; letter-spacing: -0.02em; font-size: 2rem; color: var(--ink); padding: 8px 0; border: 0; }
+}
+
+/* Smallest phones: icon-only theme toggle (its aria-label still names it) */
+@media (max-width: 359px) {
+  .theme-toggle { width: 44px; padding: 0; justify-content: center; }
+  .theme-toggle span:last-child { display: none; }
 }
 
 /* Main */
