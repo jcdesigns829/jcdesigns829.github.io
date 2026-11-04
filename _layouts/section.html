@@ -6,4 +6,16 @@ layout: default
   <p><a href="{{ '/artwork.html' | relative_url }}">&larr; All artwork</a></p>
 </header>
 
+{% if page.intro %}
+<p class="section-intro">{{ page.intro }}</p>
+{% endif %}
+
 {% include gallery.html section=page.section %}
+
+{% comment %} Optional text below the gallery: whatever the section page has after its front matter. {% endcomment %}
+{% assign notes = content | strip %}
+{% if notes != "" %}
+<section class="section-notes">
+  {{ content }}
+</section>
+{% endif %}
