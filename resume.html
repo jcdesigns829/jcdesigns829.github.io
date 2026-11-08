@@ -4,23 +4,6 @@ title: Resume
 ---
 <header class="page-head">
   <h1>Resume</h1>
-  <p><a class="button" href="{{ '/images/Jack-Carlin-Resume.pdf' | relative_url }}" download="Jack-Carlin-Resume.pdf">Download PDF</a>
-  <button type="button" class="button" id="enlarge">Click to enlarge</button></p>
+  <p><a class="button" href="{{ '/images/Jack-Carlin-Resume.pdf' | relative_url }}" download="Jack-Carlin-Resume.pdf">Download PDF</a></p>
 </header>
-<img class="resume" id="resume-img"  src="{{ '/images/resume.png' | relative_url }}?v=2" alt="Jack Carlin's resume" width="1234" height="1598">
-<dialog class="resume-viewer" id="resume-viewer" aria-label="Enlarged resume">
-  <button type="button" class="button resume-close" id="resume-close">Close</button>
-  <img src="{{ '/images/resume.png' | relative_url }}?v=2" alt="Jack Carlin's resume, enlarged" width="1234" height="1598">
-</dialog>
-<script>
-(function () {
-  var d = document.getElementById('resume-viewer');
-  if (!d || !d.showModal) return;
-  function open() { d.classList.remove('zoomed'); d.showModal(); }
-  document.getElementById('enlarge').addEventListener('click', open);
-  document.getElementById('resume-img').addEventListener('click', open);
-  document.getElementById('resume-close').addEventListener('click', function () { d.close(); });
-  d.querySelector('img').addEventListener('click', function () { d.classList.toggle('zoomed'); });
-  d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
-})();
-</script>
+<img class="resume" src="{{ '/images/resume.png' | relative_url }}?v=2" alt="Jack Carlin's resume" width="1234" height="1598">
