@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DAYBREAK Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* One brand world, single theme. Layout: narrow text column, wide image plates, navy opener. */
+:root{
+  --navy:#2E318D; --yellow:#FDF251; --orange:#ED8543; --cream:#F5F0E6; --espresso:#2B1B14; --plate:#FFFFFF;
+  --display:"Poppins", "Helvetica Neue", Arial, sans-serif;
+  --body:"Poppins", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{background:var(--cream)}
+body{margin:0;background:var(--cream);color:var(--espresso);font-family:var(--body);font-size:17px;line-height:1.65}
+img{max-width:100%;display:block}
+header{background:var(--navy);color:var(--cream);padding:72px 24px 64px}
+.wrap{max-width:1080px;margin:0 auto}
+.text{max-width:680px}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--yellow);margin:0 0 18px}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(44px,8vw,88px);line-height:1;margin:0 0 20px;color:var(--yellow);text-wrap:balance}
+header p.lede{font-size:20px;line-height:1.5;margin:0;max-width:620px}
+.facts{display:flex;flex-wrap:wrap;gap:12px 40px;margin:40px 0 0;padding:24px 0 0;border-top:2px solid rgba(245,240,230,.25);list-style:none}
+.facts li{font-size:14px}
+.facts b{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow);font-weight:600}
+main{padding:0 24px 96px}
+section{padding-top:72px}
+h2{font-family:var(--display);font-size:clamp(28px,4vw,40px);line-height:1.15;color:var(--navy);margin:0 0 16px;text-wrap:balance}
+h2 span{display:block;font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:10px}
+p{margin:0 0 16px}
+ul.points{margin:0 0 16px;padding-left:20px}
+ul.points li{margin-bottom:8px}
+figure{margin:32px 0 0}
+figure img{width:100%;border-radius:14px;background:var(--plate)}
+figure.framed img{border:2px solid rgba(43,27,20,.12)}
+figcaption{font-size:14px;margin-top:10px;color:rgba(43,27,20,.75)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+@media (max-width:700px){.two{grid-template-columns:1fr}}
+.swatches{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 0;padding:0;list-style:none}
+.swatches li{flex:1 1 150px;border-radius:12px;padding:16px;font-size:13px;font-weight:600;min-height:96px;display:flex;flex-direction:column;justify-content:flex-end;border:2px solid rgba(43,27,20,.10)}
+.swatches code{font-family:inherit;font-weight:500;font-variant-numeric:tabular-nums}
+.note{background:var(--yellow);color:var(--navy);border-radius:14px;padding:24px 28px;margin-top:32px;max-width:680px}
+.note h3{margin:0 0 8px;font-size:18px}
+.note p:last-child{margin:0}
+footer{background:var(--navy);color:var(--cream);padding:40px 24px;font-size:14px}
+footer b{color:var(--yellow)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="kicker">Brand identity case study</p>
+    <h1>DAYBREAK</h1>
+    <p class="lede">An everyday coffee brand for students and young professionals, built around one idea: the first good moment of the morning.</p>
+    <ul class="facts">
+      <li><b>Project</b>Fictional brand brief</li>
+      <li><b>Scope</b>Logo, palette, pattern, packaging, cups, posters, social</li>
+      <li><b>Role</b>Brand and packaging design, JC Designs</li>
+      <li><b>Tagline</b>Your moment. Your morning.</li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+<section>
+  <div class="text">
+    <h2><span>01 The brief</span>Approachable, energetic, everyday</h2>
+    <p>DAYBREAK is a fictional coffee company. The brief asked for a brand that feels friendly and full of energy, aimed at college students and young professionals who want good coffee without the seriousness of specialty coffee culture.</p>
+    <p>The product focus is 12 oz bags of whole bean coffee plus cafe cups, so the identity had to work at shelf size, on a cup sleeve, and as a small social avatar.</p>
+  </div>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>02 Where it started</span>A logo that was really an illustration</h2>
+    <p>The first direction was a sun rising behind a coffee cup above a yellow wordmark. It was warm, but it had three problems:</p>
+    <ul class="points">
+      <li>Yellow letters on white had almost no contrast, so a thin outline was doing all the work.</li>
+      <li>It mixed four styles: a gradient sun, a hand drawn cup, an outlined wordmark, and a script tagline.</li>
+      <li>It could not shrink. The cup and steam disappeared at small sizes and in one color.</li>
+    </ul>
+  </div>
+  <figure class="framed" style="max-width:680px"><img src="img/original.png" alt="First DAYBREAK logo with a sun and coffee cup above a yellow wordmark"><figcaption>The first direction. Its colors survived. Its structure did not.</figcaption></figure>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>03 Finding the mark</span>Day plus Break, D plus B</h2>
+    <p>The name splits into two words, and the two initials share most of a shape. That led to a D and B monogram, and then to the question of where the coffee lives inside it.</p>
+    <p>The explorations ran from an interlocked outline monogram, to a bean at the crossing, to a bean inside the B, to the breakthrough: using the counter of the letter as the picture. The D holds a coffee bean. The B holds steam and a mug. Read top to bottom, the mark goes from bean to cup.</p>
+  </div>
+  <figure><img src="img/process.png" alt="Six stages of the monogram, from outline interlock to the final bean and mug counters"><figcaption>Left to right: the original interlock, bean at the crossing, bean in the B, bean as the D counter, mug as the D counter, and the final mark.</figcaption></figure>
+  <div class="text" style="margin-top:32px">
+    <p>Each version was tested from 16 px to 192 px in black and reversed. The final rule: the full mark runs at 48 px or larger, and a plain letter version covers favicons and small stamps.</p>
+  </div>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>04 Wordmark and lockups</span>A quiet word next to a loud mark</h2>
+    <p>The original hand lettering was tested beside the new monogram and clashed with it. The letters were tall and narrow while the monogram is wide and geometric. The wordmark moved to a bold rounded sans with softened corners that echo the monogram, so the two read as one piece.</p>
+  </div>
+  <figure><img src="img/lockups.png" alt="Horizontal and stacked DAYBREAK lockups in navy, yellow on navy, and black"><figcaption>Horizontal and stacked lockups, with a one color version for stamps and print.</figcaption></figure>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>05 Color</span>Yellow is a fill, navy does the reading</h2>
+    <p>The palette keeps the colors of the first logo and gives each one a job. Contrast testing set the rules: navy passes on both yellow and cream at about 9 to 1, while yellow on cream is close to invisible, so yellow never carries text.</p>
+  </div>
+  <ul class="swatches">
+    <li style="background:#FDF251;color:#2E318D">Sunshine Yellow<code>#FDF251</code></li>
+    <li style="background:#2E318D;color:#F5F0E6">Deep Navy<code>#2E318D</code></li>
+    <li style="background:#ED8543;color:#2E318D">Sunrise Orange<code>#ED8543</code></li>
+    <li style="background:#F5F0E6;color:#2E318D">Warm Cream<code>#F5F0E6</code></li>
+    <li style="background:#2B1B14;color:#F5F0E6">Espresso<code>#2B1B14</code></li>
+    <li style="background:#C9A27A;color:#2B1B14">Crema<code>#C9A27A</code></li>
+  </ul>
+  <figure><img src="img/palette.png" alt="Palette board with color roles, proportions, contrast results, and monogram colorways"><figcaption>Roles, proportions, contrast checks, and the monogram in four colorways.</figcaption></figure>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>06 Pattern</span>The sunrise comes back</h2>
+    <p>The sun from the first logo returned as a supporting graphic. Paired with the bean, it makes a two icon pattern in three colorways. A steam icon was tested and removed, because two icons read more clearly than three.</p>
+  </div>
+  <figure><img src="img/pattern.png" alt="Sunrise and bean pattern in navy on yellow, yellow on navy, and orange and navy on cream"></figure>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>07 Packaging</span>Three roasts, three colorways</h2>
+    <p>The three pattern colorways map onto a product line: light, medium, and dark roast. The pattern sits in a band on the lower third so the logo has room. A full wrap version was tested and felt busier, so the band stayed.</p>
+  </div>
+  <figure><img src="img/bags.png" alt="Three 12 oz coffee bags in yellow, cream, and navy"><figcaption>12 oz whole bean bags. Roast names are working titles.</figcaption></figure>
+  <figure><img src="img/cups.png" alt="Three to go cups and a ceramic mug with the DB monogram"><figcaption>Cups and a mug, carried by the monogram alone.</figcaption></figure>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>08 Campaign</span>Posters and social</h2>
+    <p>The campaign speaks to people with early classes and early meetings. The big sunrise gives the brand a hero image, and the product posts reuse the bags and cups directly.</p>
+  </div>
+  <figure><img src="img/posters.png" alt="Three DAYBREAK posters"></figure>
+  <figure><img src="img/social.png" alt="Three square DAYBREAK social posts"></figure>
+</section>
+
+<section>
+  <div class="text">
+    <h2><span>09 What I learned</span>The best idea was already in the letters</h2>
+    <ul class="points">
+      <li>A logo has to survive one color and 24 px before it earns gradients or detail.</li>
+      <li>Testing contrast early turned color from a taste question into a set of rules.</li>
+      <li>Dropping the first logo did not waste it. Its colors became the palette and its sun became the pattern.</li>
+    </ul>
+  </div>
+  <div class="note">
+    <h3>Process and tools</h3>
+    <p>The brief and client feedback were simulated with ChatGPT. Concept development, vector construction of the explorations, and flat mockups were produced in collaboration with Claude.</p>
+  </div>
+</section>
+
+</div>
+</main>
+<footer><div class="wrap"><b>DAYBREAK</b> is a fictional brand created as a portfolio project by JC Designs. <a href="/" style="color:#FDF251">Back to portfolio</a></div></footer>
+</body>
+</html>
