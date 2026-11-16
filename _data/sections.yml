@@ -5,6 +5,9 @@
 - name: Graphic Design
   page: /graphicdesign.html
   cover: supes.jpg
+- name: JC Designs Brand
+  page: /jcdesignsbrand.html
+  cover: jc-designs-logo.jpg
 - name: Digital Illustration
   page: /digitalillustration.html
   cover: spring-bunny.jpg
